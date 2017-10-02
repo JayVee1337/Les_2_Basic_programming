@@ -24,3 +24,10 @@
 #
 # print("het aantal dagen bedraagt {0}.\n Het aantal uren bedraagt {1}.\n Het aantal minuten bedraagt {2}.\n Het aantal seconden bedraagt {3}".format(aantal_dagen, aantal_uren, aantal_minuten, aantal_seconden))
 
+import math
+print(math.pi)
+
+print(input.__doc__)
+import datetime
+datum = datetime.datetime.now().date()
+print(datum)
