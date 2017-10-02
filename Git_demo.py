@@ -1,10 +1,10 @@
-print ("hello git")
-print ("how you doin")
-print ("how you doin")
+#print ("hello git")
+#print ("how you doin")
+#print ("how you doin")
 
-print ("how you doin")
+#print ("how you doin")
 
-print ("boi")
+#print ("boi")
 
 #commentaar 
 totaal_seconden = int(input("geef het aantal seconden op: "))
@@ -16,4 +16,4 @@ aantal_minuten = rest2 // 60
 rest3= rest2 % 60
 aantal_seconden = rest3
 
-print("het aantal dagen bedraagt %s.\n Het aantal uren bedraagt %s.\n Het aantal minuten bedraagt %s.\n Het aantal seconden bedraagt %s" % (aantal_dagen, aantal_uren, aantal_minuten, aantal_seconden))
+print("het aantal dagen bedraagt {0}.\n Het aantal uren bedraagt {1}.\n Het aantal minuten bedraagt {2}.\n Het aantal seconden bedraagt {3}".format(aantal_dagen, aantal_uren, aantal_minuten, aantal_seconden))
