@@ -23,4 +23,4 @@
 # aantal_seconden = rest2 % 60
 #
 # print("het aantal dagen bedraagt {0}.\n Het aantal uren bedraagt {1}.\n Het aantal minuten bedraagt {2}.\n Het aantal seconden bedraagt {3}".format(aantal_dagen, aantal_uren, aantal_minuten, aantal_seconden))
-#
+
