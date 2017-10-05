@@ -17,5 +17,5 @@ def printWiskunde (a,b,c=0,d=0):
     Berekening = a-b+c-d
     print("de uitkomst is {0}".format(Berekening))
 
-printWiskunde(b=1, c=2, a=3, d=4)
+printWiskunde(2, 4)
 
