@@ -13,9 +13,20 @@
 # printWelkom(naam)
 
 #Oefening 3
-def printWiskunde (a,b,c=0,d=0):
-    Berekening = a-b+c-d
-    print("de uitkomst is {0}".format(Berekening))
+# def printWiskunde (a,b,c=0,d=0):
+#     Berekening = a-b+c-d
+#     print("de uitkomst is {0}".format(Berekening))
+#
+# printWiskunde(2, 4)
 
-printWiskunde(2, 4)
+#Oefening 4: Maximum
+# def printMaximum(a, b, c):
+#     if (a >= b) and (a >= c):
+#         print("Het maximum is {0}".format(a))
+#     elif (b >= a) and (b>= c):
+#         print ("Het maximum is {0}".format(b))
+#     elif (c >= a) and (c >= b):
+#         print ("Het maximum is {0}".format(c))
+# printMaximum (6532, 312, 643516543)
 
+#Oefening 5: Maandnummer
