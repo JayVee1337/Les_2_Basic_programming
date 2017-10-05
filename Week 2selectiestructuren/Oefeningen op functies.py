@@ -30,3 +30,33 @@
 # printMaximum (6532, 312, 643516543)
 
 #Oefening 5: Maandnummer
+maand = float(input("geef een maandnummer op "))
+def maandNummer (maand):
+    if (maand == 1):
+        print ("Dit is de maand januari")
+    elif (maand == 2):
+        print ("Dit is de maand februari")
+    elif (maand == 3):
+        print ("Dit is de maand maart")
+    elif (maand == 4):
+        print ("Dit is de maand april")
+    elif (maand == 5):
+        print ("Dit is de maand mei")
+    elif (maand == 6):
+        print ("Dit is de maand juni")
+    elif (maand == 7):
+        print("Dit is de maand juli")
+    elif (maand == 8):
+        print("Dit is de maand augustus")
+    elif (maand == 9):
+        print("Dit is de maand september")
+    elif (maand == 10):
+        print("Dit is de maand oktober")
+    elif (maand == 11):
+        print("Dit is de maand november")
+    elif (maand == 12):
+        print("Dit is de maand december")
+    elif (maand >= 13):
+        print ("Dit is niet mogelijk!!")
+
+maandNummer(maand)
