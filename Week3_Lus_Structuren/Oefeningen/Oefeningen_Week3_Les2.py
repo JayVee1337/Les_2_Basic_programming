@@ -22,27 +22,39 @@
 # genereer_paswoord(naam = str, voornaam = str, datum = str, paswoord=str, voornaam_Upper=str, naam_Lower=str)
 #
 
-# Oefening 3: Howest e-mail
+# Oefening 3: Howest e-mail (Te Moeilijk)
 
 #1) @student.howest.be erin?
 #2) punt aanwezig?
 #3) enkel a-z 1-9
 #4)minstens 2 karakters voor naam en voornaam
 
-def Controle_Howest_email(mailadres):
-    pos = mailadres.find(("@student.howest.be"))
-    if pos == -1:
-        return False
-    voornaam_naam = mailadres[:pos] #wegknippen @student.howest.be
-    #controle punt
+# def Controle_Howest_email(mailadres):
+#     pos = mailadres.find(("@student.howest.be"))
+#     if pos == -1:
+#         return False
+#         print(("lelijk"))
+#     voornaam_naam = mailadres[:pos] #wegknippen @student.howest.be
+#     #controle punt
+#
+#     #controle van a-z / 1-9
+#     if (str.isalnum == True):
+#         return True
+#     else: return False
+#     return True
+# if Controle_Howest_email(str(input)):
+#     print("Correct email adres")
+# else: ("Dit is niet het juiste soort email adres")
+#
+# Controle_Howest_email(mailadres= "Jens.Vercauteren@t")
 
-    #controle van a-z / 1-9
-    if (str.isalnum == True):
-        return True
-    else: return False
-    return True
-if Controle_Howest_email(str(input)):
-    print("Correct email adres")
-else: ("Dit is niet het juiste soort email adres")
+#Oefening4: Password-Generator
 
+import random
 
+def Random_Password(Maximum_Lengte, Minimum_Lengte, Gekozen_Lengte):
+    Maximum_Lengte = int(input("Geef de maximumlengte van uw wachtwoord "))
+    Minimum_Lengte = int(input("Geef de minimumlengte van uw wachtwoord"))
+    Gekozen_Lengte = random.randrange(Minimum_Lengte,Maximum_Lengte,[1])
+    print(Gekozen_Lengte)
+Random_Password(Minimum_Lengte=float, Maximum_Lengte=float, Gekozen_Lengte=float)
