@@ -51,10 +51,20 @@
 #Oefening4: Password-Generator
 
 import random
+import string
 
-def Random_Password(Maximum_Lengte, Minimum_Lengte, Gekozen_Lengte):
-    Maximum_Lengte = int(input("Geef de maximumlengte van uw wachtwoord "))
-    Minimum_Lengte = int(input("Geef de minimumlengte van uw wachtwoord"))
-    Gekozen_Lengte = random.randrange(Minimum_Lengte,Maximum_Lengte,[1])
-    print(Gekozen_Lengte)
-Random_Password(Minimum_Lengte=float, Maximum_Lengte=float, Gekozen_Lengte=float)
+def genereer_paswoord(min,max):
+    paswoord = ""
+    randomlente = random.randint(min,max)
+    for teller in range(0,randomlente):
+        #Letter kiezen
+        letter = random.choice(string.ascii_letters)
+        paswoord = paswoord + letter
+    return paswoord
+
+
+
+minimum = int(input("Geef het minimum op: "))
+maximum = int(input("Geef het maximum op: "))
+paswoord = genereer_paswoord(minimum,maximum)
+print("Uw paswoord wordt: %s" % paswoord)
