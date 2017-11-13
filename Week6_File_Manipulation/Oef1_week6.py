@@ -10,6 +10,7 @@ bestand.write("And the BOOMBOOMDOBODOOMBOOM\n")
 bestand.write("SKYAA")
 bestand.close()
 
+
 def lees_bestand_in_met_lijnnummers(bestand):
     bestand = open("Oef1_6", 'r')
     lijn = bestand.readline().rstrip('\n')
