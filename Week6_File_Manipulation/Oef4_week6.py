@@ -40,5 +40,17 @@ def selecteer_random_elftal(spelerslijst):
         krimpende_lijst.pop(willekeurig_getal)
     print(gekozen_ploeg)
 
+def opslaan_ploegopstelling(spelerslijst):
+    gekozen_ploeg = []
+    krimpende_lijst = spelerslijst
+
+    for aantal in range(0,11):
+        willekeurig_getal = random.randrange(0, len(krimpende_lijst))
+        gekozen_ploeg.append(krimpende_lijst[willekeurig_getal])
+        krimpende_lijst.pop(willekeurig_getal)
+    print(gekozen_ploeg)
+    ploeg = open("ploegopstelling.txt", 'r')
+    ploeg.write(gekozen_ploeg)
 spelers =inlezen_spelers("Spelers.txt")
 selecteer_random_elftal(spelers)
+opslaan_ploegopstelling(spelers)
