@@ -69,14 +69,20 @@
 # paswoord = genereer_paswoord(minimum,maximum)
 # print("Uw paswoord wordt: %s" % paswoord)
 #
-def email_controle(email):
-    email = input("geef uw email:")
-    pos = email.find  ("@student.howest.be")
-    punt = email.find (".")
-    naam = email.find [0:punt]
-    achternaam = email.find [punt:pos]
-    if pos == "@student.howest.be" and punt == "." and naam == str and achternaam == str:
-        print("uw email adress klopt")
+def email_controle():
+    email = str(input("Geef uw Howest e-mail: "))
+    controle = "@student.howest.be"
+    emailcon = email.find("@student.howest.be")
+    naamvoornaam = email[:emailcon]
+    naamcon = naamvoornaam.find(".")
+    voornaam = naamvoornaam[0:naamcon]
+    achternaam = naamvoornaam.replace(voornaam,"")
+    achternaam = achternaam.replace(".","")
+    controle2 = email.replace(naamvoornaam,"")
+
+    if controle == controle2 and len(voornaam)>=2 and len(achternaam)>=2 and str.isalnum(voornaam) == True and str.isalnum(achternaam) == True:
+        print("uw email --> {0} is correct.".format(email))
     else:
-        print("uw email adress klopt niet")
-email_controle(email = input)
+        print("Uw email --> {0} is NIET correct.".format(email))
+
+email_controle()
