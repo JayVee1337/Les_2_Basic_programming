@@ -51,6 +51,6 @@ def opslaan_ploegopstelling(spelerslijst):
     print(gekozen_ploeg)
     ploeg = open("ploegopstelling.txt", 'r')
     ploeg.write(gekozen_ploeg)
-spelers =inlezen_spelers("Spelers.txt")
+spelers =inlezen_spelers("Tekstbestand/Spelers.txt")
 selecteer_random_elftal(spelers)
 opslaan_ploegopstelling(spelers)
